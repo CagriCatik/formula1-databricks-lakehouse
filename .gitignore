@@ -1,0 +1,29 @@
+# Zensical build output
+/site/
+
+# Python virtual environment
+.venv/
+venv/
+
+# Python caches and build output
+__pycache__/
+*.py[cod]
+.cache/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+source/
+.databricks
+development/
+databricks-course/

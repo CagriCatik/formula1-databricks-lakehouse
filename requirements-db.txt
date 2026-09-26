@@ -1,0 +1,27 @@
+# Environment for working on the experimental notebooks in notebooks/ (VS Code + Databricks Connect).
+# The production package has its own locked environment: see pyproject.toml and `uv sync`.
+# Databricks local / quasi-local development
+# Pin databricks-connect to the Databricks Runtime version you target when
+# reproducibility matters (for example, 16.4.* for DBR 16.4 LTS).
+databricks-connect
+databricks-sdk
+
+# Install the modern Databricks CLI as a standalone binary. The legacy
+# `databricks-cli` Python package is intentionally not installed here.
+
+# Local development tools
+pytest
+ruff
+mypy
+
+# Configuration / environment handling
+python-dotenv
+PyYAML
+
+# Data utilities commonly useful around Spark jobs
+pandas
+pyarrow
+
+# Optional: notebooks in VS Code
+ipykernel
+jupyter
